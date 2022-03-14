@@ -1,0 +1,36 @@
+
+/* /project/matrices/courtbouillon-report/15-template-screen-two-pages/2010-misc--override/print.scss */
+:root {
+  --color-primary: deepskyblue;
+  --color-toc-items-separator: var(--color-default) 
+}
+@page {
+    @top-center {
+      opacity: 1;
+    }
+    @bottom-center {
+      opacity: 1;
+    }
+}
+
+figcaption {
+  width: 100%;
+  text-align: center;
+}
+
+img + figcaption:before {
+  content: 'Figure - ';
+}
+
+/* #contents {
+  break-before: always;
+  break-after: always;
+} */
+
+#contents ul li a::after {
+  display: inline-box;
+  background-color: var(--color-primary);
+  color: var(--color-default);
+  width: 0.5cm;
+  text-align: center;
+}

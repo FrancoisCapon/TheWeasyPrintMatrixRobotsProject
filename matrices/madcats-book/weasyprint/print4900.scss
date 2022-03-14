@@ -1,0 +1,27 @@
+
+/* /project/matrices/madcats-book/40-book-chapters/4900-chapters-cover/print.scss */
+#chapitre-1::before {
+    background-image: url('/project/matrices/madcats-book/40-book-chapters/4900-chapters-cover/couv1.jpg');
+}
+#chapitre-2::before {
+    background-image: url('/project/matrices/madcats-book/40-book-chapters/4900-chapters-cover/couv2.jpg');
+}
+#chapitre-3::before {
+    background-image: url('/project/matrices/madcats-book/40-book-chapters/4900-chapters-cover/couv3.jpg');
+}
+#chapitre-4::before {
+    background-image: url('/project/matrices/madcats-book/40-book-chapters/4900-chapters-cover/couv4.jpg');
+}
+
+.chapitre::before {
+    background: center / cover;
+    border-radius: 0 0 50% 50% / 0 0 15mm 15mm;
+    content: "";
+    display: block;
+    height: 90mm;
+    left: -30mm;
+    position: absolute;
+    top: -20mm;
+    width: 168mm;
+    z-index: -1;
+}

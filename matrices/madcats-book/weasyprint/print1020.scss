@@ -1,0 +1,86 @@
+
+/* /project/matrices/madcats-book/10-template/1020-pages/print.scss */
+@page {
+    margin: 2cm 2cm 3cm 2cm;
+    size: 148mm 210mm;
+}
+
+@page :left {
+    @bottom-left {
+        content: counter(page);
+        position: absolute;
+        z-index: -1;
+    }
+    @bottom-right {
+        content: string(heading);
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+@page :right {
+    @bottom-left {
+        content: string(heading);
+        position: absolute;
+        z-index: -1;
+    }
+    @bottom-right {
+        content: counter(page);
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+@page full {
+    @bottom-right {
+        content: none;
+    }
+
+    @bottom-left {
+        content: none;
+    }
+
+    background: black;
+    margin: 0;
+}
+
+@page :blank {
+    @bottom-right {
+        content: none;
+    }
+
+    @bottom-left {
+        content: none;
+    }
+}
+
+@page clean {
+    @bottom-right {
+        content: none;
+    }
+
+    @bottom-left {
+        content: none;
+    }
+}
+
+.fullpage:last-child {
+    break-before: left;
+}
+
+.fullpage img {
+    bottom: 0;
+    height: 210mm;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    object-fit: cover;
+    page: full;
+    position: absolute;
+    width: 148mm;
+    z-index: 1;
+}
+
+
+
+

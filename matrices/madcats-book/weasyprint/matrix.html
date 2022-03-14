@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Builded by the Robots</title>
+    <style>
+        :root {
+            --color-background-body: aliceblue;
+            --color-empty: slategray;
+        }
+        body {
+            font-family: monospace;
+            cursor: default;
+            background-color: var(--color-background-body);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            text-align: center;
+            background-color: antiquewhite;
+            border-collapse: collapse;
+            width: 95%;
+            margin: auto;
+            table-layout: fixed;
+        }
+        table col:first-of-type {
+            width: 5rem;
+        }
+        tr {
+            height: 2.5rem;
+        }
+        td,
+        th {
+            border: 1px solid var(--color-empty);
+            cursor: pointer;
+            padding: 0 0.5rem;
+        }
+        th:empty {
+            background-color: var(--color-background-body);
+            border: none;
+            cursor: default;
+        }
+        td:empty.hover {
+            background-color: lightslategray;
+            border-color: lightslategray;
+            background-color: hsl(210,13%,60%);
+            border-color: hsl(210,13%,60%);
+        }
+        table th.hover {
+            background-color: lightcyan;
+        }
+
+        td {
+            background-color: antiquewhite;
+        }
+        td.hover, table th.hover {
+            background-color: lightcyan;
+        }
+        td:empty {
+            background-color: var(--color-empty);
+            border-color: var(--color-empty);
+            cursor: default;
+        }
+        del {
+            background-color: lightpink;
+        }
+        ins {
+            background-color: lightgreen;
+            text-decoration: none;
+        }
+        ins, del, td span {
+            line-height: 1.5rem;
+            padding: 0.5rem;
+            display: inline-block;
+        }
+        td span {
+            color: silver;
+        }
+        [data-title] {
+            position: relative;
+        }
+        [data-title]:hover:before {
+            content: attr(data-title);
+            position: absolute;
+            left: 0;
+            width: 75%;
+            bottom: 2.5rem;
+            background-color: skyblue;
+            border: solid 1px silver;
+            transition: opacity 0.75s ease-in-out;
+            padding: 0.5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        th,[data-title]:hover:before {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <h1>Matrix Builded by the Robots</h1>
+    <table>
+        <col span="1"/>
+        <tr><th></th><th data-column-id=10>10-template</th><th data-column-id=30>30-book-start</th><th data-column-id=40>40-book-chapters</th><th data-column-id=45>45-fix</th><th data-column-id=50>50-custom</th><th data-column-id=80>80-book-end</th></tr><tr><th data-row-id="1010">1010</th><td data-row-id="1010" data-column-id="10" data-title="1010-fonts"><span>HTML</span><del>SCSS</del><span>META</span><td data-row-id="1010" data-column-id="30" ><td data-row-id="1010" data-column-id="40" ><td data-row-id="1010" data-column-id="45" ><td data-row-id="1010" data-column-id="50" data-title="1010-fonts-lexand"><span>HTML</span><ins>SCSS</ins><span>META</span><td data-row-id="1010" data-column-id="80" ></tr><tr><th data-row-id="1020">1020</th><td data-row-id="1020" data-column-id="10" data-title="1020-pages"><span>HTML</span><ins>SCSS</ins><span>META</span><td data-row-id="1020" data-column-id="30" ><td data-row-id="1020" data-column-id="40" ><td data-row-id="1020" data-column-id="45" ><td data-row-id="1020" data-column-id="50" ><td data-row-id="1020" data-column-id="80" ></tr><tr><th data-row-id="1030">1030</th><td data-row-id="1030" data-column-id="10" data-title="1030-html"><span>HTML</span><ins>SCSS</ins><span>META</span><td data-row-id="1030" data-column-id="30" ><td data-row-id="1030" data-column-id="40" ><td data-row-id="1030" data-column-id="45" ><td data-row-id="1030" data-column-id="50" ><td data-row-id="1030" data-column-id="80" ></tr><tr><th data-row-id="1035">1035</th><td data-row-id="1035" data-column-id="10" ><td data-row-id="1035" data-column-id="30" ><td data-row-id="1035" data-column-id="40" ><td data-row-id="1035" data-column-id="45" ><td data-row-id="1035" data-column-id="50" data-title="1035-html-sansserif"><span>HTML</span><ins>SCSS</ins><span>META</span><td data-row-id="1035" data-column-id="80" ></tr><tr><th data-row-id="1040">1040</th><td data-row-id="1040" data-column-id="10" data-title="1040-misc"><span>HTML</span><ins>SCSS</ins><span>META</span><td data-row-id="1040" data-column-id="30" ><td data-row-id="1040" data-column-id="40" ><td data-row-id="1040" data-column-id="45" ><td data-row-id="1040" data-column-id="50" ><td data-row-id="1040" data-column-id="80" ></tr><tr><th data-row-id="3010">3010</th><td data-row-id="3010" data-column-id="10" ><td data-row-id="3010" data-column-id="30" data-title="3010-cover"><ins>HTML</ins><span>SCSS</span><span>META</span><td data-row-id="3010" data-column-id="40" ><td data-row-id="3010" data-column-id="45" ><td data-row-id="3010" data-column-id="50" ><td data-row-id="3010" data-column-id="80" ></tr><tr><th data-row-id="3020">3020</th><td data-row-id="3020" data-column-id="10" ><td data-row-id="3020" data-column-id="30" data-title="3020-authors"><ins>HTML</ins><ins>SCSS</ins><span>META</span><td data-row-id="3020" data-column-id="40" ><td data-row-id="3020" data-column-id="45" ><td data-row-id="3020" data-column-id="50" ><td data-row-id="3020" data-column-id="80" ></tr><tr><th data-row-id="3030">3030</th><td data-row-id="3030" data-column-id="10" ><td data-row-id="3030" data-column-id="30" data-title="3030-contents"><ins>HTML</ins><ins>SCSS</ins><span>META</span><td data-row-id="3030" data-column-id="40" ><td data-row-id="3030" data-column-id="45" ><td data-row-id="3030" data-column-id="50" ><td data-row-id="3030" data-column-id="80" ></tr><tr><th data-row-id="3900">3900</th><td data-row-id="3900" data-column-id="10" ><td data-row-id="3900" data-column-id="30" data-title="3900-meta"><span>HTML</span><span>SCSS</span><ins>META</ins><td data-row-id="3900" data-column-id="40" ><td data-row-id="3900" data-column-id="45" ><td data-row-id="3900" data-column-id="50" ><td data-row-id="3900" data-column-id="80" ></tr><tr><th data-row-id="4010">4010</th><td data-row-id="4010" data-column-id="10" ><td data-row-id="4010" data-column-id="30" ><td data-row-id="4010" data-column-id="40" data-title="4010-chapter-01"><ins>HTML</ins><span>SCSS</span><span>META</span><td data-row-id="4010" data-column-id="45" ><td data-row-id="4010" data-column-id="50" ><td data-row-id="4010" data-column-id="80" ></tr><tr><th data-row-id="4020">4020</th><td data-row-id="4020" data-column-id="10" ><td data-row-id="4020" data-column-id="30" ><td data-row-id="4020" data-column-id="40" data-title="4020-chapter-02"><ins>HTML</ins><span>SCSS</span><span>META</span><td data-row-id="4020" data-column-id="45" ><td data-row-id="4020" data-column-id="50" ><td data-row-id="4020" data-column-id="80" ></tr><tr><th data-row-id="4030">4030</th><td data-row-id="4030" data-column-id="10" ><td data-row-id="4030" data-column-id="30" ><td data-row-id="4030" data-column-id="40" data-title="4030-chapter-03"><ins>HTML</ins><span>SCSS</span><span>META</span><td data-row-id="4030" data-column-id="45" ><td data-row-id="4030" data-column-id="50" ><td data-row-id="4030" data-column-id="80" ></tr><tr><th data-row-id="4040">4040</th><td data-row-id="4040" data-column-id="10" ><td data-row-id="4040" data-column-id="30" ><td data-row-id="4040" data-column-id="40" data-title="4040-chapter-04"><del>HTML</del><span>SCSS</span><span>META</span><td data-row-id="4040" data-column-id="45" ><td data-row-id="4040" data-column-id="50" data-title="4040-chapter-04"><ins>HTML</ins><span>SCSS</span><span>META</span><td data-row-id="4040" data-column-id="80" ></tr><tr><th data-row-id="4900">4900</th><td data-row-id="4900" data-column-id="10" ><td data-row-id="4900" data-column-id="30" ><td data-row-id="4900" data-column-id="40" data-title="4900-chapters-cover"><span>HTML</span><ins>SCSS</ins><span>META</span><td data-row-id="4900" data-column-id="45" ><td data-row-id="4900" data-column-id="50" ><td data-row-id="4900" data-column-id="80" ></tr><tr><th data-row-id="4910">4910</th><td data-row-id="4910" data-column-id="10" ><td data-row-id="4910" data-column-id="30" ><td data-row-id="4910" data-column-id="40" data-title="4910-chapters-outro-bugged"><span>HTML</span><del>SCSS</del><span>META</span><td data-row-id="4910" data-column-id="45" data-title="4910-chapters-outro"><span>HTML</span><ins>SCSS</ins><span>META</span><td data-row-id="4910" data-column-id="50" ><td data-row-id="4910" data-column-id="80" ></tr><tr><th data-row-id="5100">5100</th><td data-row-id="5100" data-column-id="10" ><td data-row-id="5100" data-column-id="30" ><td data-row-id="5100" data-column-id="40" ><td data-row-id="5100" data-column-id="45" ><td data-row-id="5100" data-column-id="50" ><td data-row-id="5100" data-column-id="80" data-title="5100-page-last"><ins>HTML</ins><span>SCSS</span><span>META</span></tr>
+    </table>
+    <script>
+        function hoveroutcells(kind, id, action) {
+            let cells = document.querySelectorAll('[data-'+ kind +'-id="' + id + '"]');
+            for (i = 0; i < cells.length; i++ ) {
+               if (action == 'add') {
+                   cells[i].classList.add("hover");
+                } else {
+                    cells[i].classList.remove("hover");
+                }
+            }
+        }
+
+        function cellMouseOverOut(event) {
+            //console.log(event.target.tagName)
+            let action;
+            if (event.type == 'mouseover') {
+                action = 'add';
+            } else {
+                action = 'remove'
+            }
+            let rowId;
+            let columnId;
+            if (event.target.tagName != 'TH' && event.target.tagName != 'TD') {
+                rowId = event.target.parentNode.dataset.rowId;
+                columnId = event.target.parentNode.dataset.columnId;
+            } else {
+                rowId = event.target.dataset.rowId;
+                columnId = event.target.dataset.columnId;
+            }
+            hoveroutcells('row', rowId, action)
+            hoveroutcells('column', columnId, action)
+        }
+
+        cells = document.querySelectorAll('th, td, td span, del, ins');
+        for (let i=0; i < cells.length; i++) {
+            cells[i].addEventListener('mouseover', cellMouseOverOut);
+            cells[i].addEventListener('mouseout', cellMouseOverOut);
+        }
+    </script>
+</body>
+</html>

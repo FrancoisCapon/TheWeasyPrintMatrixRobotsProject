@@ -1,0 +1,28 @@
+.chapter-title, h3, h1 {
+    /* KO ?? bookmark-label: none; https://doc.courtbouillon.org/weasyprint/v54.2/api_reference.html#css-generated-content-module-level-3 https://www.w3.org/TR/css-gcpm-3/#bookmark-level OK */
+    bookmark-level: none;
+}
+
+body {
+    // https://stackoverflow.com/questions/52022919/css-counter-not-incrementing
+    counter-reset: counterh2 counterfigure;
+}
+
+ body h2 {
+    counter-increment: counterh2;
+    bookmark-label: counter(counterh2) ". " content(text);
+    counter-reset: counterh4;
+}
+
+h4 {
+    counter-increment: counterh4 ;
+    // counter-increment: counterh2; attention une seule proprités !
+    bookmark-label: counter(counterh2) "." counter(counterh4) ". " content(text);
+
+}
+
+img + figcaption {
+    counter-increment: counterfigure;
+    bookmark-label: 'Figure ' counter(counterfigure) ' - ' content(text);
+    bookmark-level: 3; 
+  }

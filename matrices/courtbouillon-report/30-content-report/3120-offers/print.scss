@@ -1,0 +1,31 @@
+#offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#offers h2, #offers h3 {
+    width: 100%;
+}
+#offers section {
+    width: 30%;
+}
+#offers section h4 {
+    margin-bottom: 0;
+}
+#offers section ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+#offers section ul li:not(:last-of-type) {
+    margin: .5cm 0;
+}
+#offers section p {
+    background-color: var(--color-primary);
+    display: block;
+    font-size: 15pt;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: .25cm 0;
+    text-align: center;
+}

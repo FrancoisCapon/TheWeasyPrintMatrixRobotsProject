@@ -1,0 +1,32 @@
+// bug line above image => overwritten
+.outro {
+    display: none;
+}
+
+#chapitre-1::after {
+    background-image: url('outro1.png');
+}
+#chapitre-2::after {
+    background-image: url('outro2.jpg');
+}
+#chapitre-3::after {
+    background-image: url('outro3.jpg');
+}
+#chapitre-4::after {
+    background-image: url('outro4.jpg');
+}
+
+.chapitre::after {
+    background-size: cover;
+    border-radius: 50% 50% 0 0 / 15mm 15mm 0 0;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top:12cm;
+    left:-3cm;
+    right:-3cm;
+    height: 9cm;
+}
+
+

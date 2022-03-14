@@ -1,0 +1,28 @@
+// https://www.w3.org/TR/css-page-3/#progression
+html { break-before: left }
+
+@page {
+  @top-left {
+    background-color: var(--color-primary);
+    content: counter(page);
+    height: 1cm;
+    text-align: center;
+    width: 1cm;
+  }
+  @top-center {
+    background-color: var(--color-primary);
+    content: '';
+    display: block;
+    height: .05cm;
+    opacity: .5;
+    width: 100%;
+  }
+  @top-right {
+    content: string(heading);
+    font-size: 9pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+

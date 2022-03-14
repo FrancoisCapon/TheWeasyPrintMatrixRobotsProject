@@ -1,0 +1,26 @@
+
+/* /project/matrices/madcats-book/50-custom/1035-html-sansserif/print.scss */
+html,
+h2 {
+    font-family: SansSerif;
+}
+
+html {
+    font-size: 11pt;
+}
+
+p {
+    line-height: 180%;
+    //text-align: left;
+}
+
+img[src*='inter42.png'] {
+    display: block;
+    width: 50%;
+    //display: none;
+}
+
+#contents li {
+    line-height: 250%;
+}
+

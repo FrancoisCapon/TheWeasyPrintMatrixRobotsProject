@@ -1,0 +1,34 @@
+@page :left {
+  @top-left {
+    background-color: var(--color-primary);
+    content: counter(page);
+    height: 1cm;
+    text-align: center;
+    width: 1cm;
+  }
+  @top-right {
+    content: string(heading);
+    font-size: 9pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+@page :right {
+  @top-right {
+    background-color: var(--color-primary);
+    content: counter(page);
+    height: 1cm;
+    text-align: center;
+    width: 1cm;
+  }
+  @top-left {
+    content: string(heading);
+    font-size: 9pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+

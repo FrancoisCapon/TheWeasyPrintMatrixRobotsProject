@@ -1,0 +1,25 @@
+#chapitre-1::before {
+    background-image: url('couv1.jpg');
+}
+#chapitre-2::before {
+    background-image: url('couv2.jpg');
+}
+#chapitre-3::before {
+    background-image: url('couv3.jpg');
+}
+#chapitre-4::before {
+    background-image: url('couv4.jpg');
+}
+
+.chapitre::before {
+    background: center / cover;
+    border-radius: 0 0 50% 50% / 0 0 15mm 15mm;
+    content: "";
+    display: block;
+    height: 90mm;
+    left: -30mm;
+    position: absolute;
+    top: -20mm;
+    width: 168mm;
+    z-index: -1;
+}

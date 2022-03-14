@@ -1,0 +1,63 @@
+html {
+    counter-reset: h2-counter;
+    font-family: OpenDyslexic;
+    font-size: 10pt;
+}
+body {
+    margin: 0;
+}
+
+p {
+    line-height: 2;
+    text-align: justify;
+}
+img {
+    display: block;
+    margin: 2em auto;
+    max-width: 70%;
+}
+
+h1 {
+    display: none;
+}
+h2 {
+    color: white;
+    counter-increment: h2-counter;
+    display: flex;
+    flex-direction: column;
+    font-family: OpenDyslexic;
+    font-size: 3em;
+    height: 6cm;
+    justify-content: flex-end;
+    margin: 0;
+    string-set: heading content();
+    text-align: center;
+}
+h2::before {
+    content: "Chapitre " counter(h2-counter) " ";
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1;
+}
+
+section {
+    break-after: right;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+aside figure {
+    flex: none;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+aside img {
+    border: 0.4mm solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 14mm;
+}

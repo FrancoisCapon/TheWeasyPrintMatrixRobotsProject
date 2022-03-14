@@ -1,0 +1,22 @@
+@page :first {
+    background: url('report-cover.jpg') no-repeat center;
+    background-size: cover;
+    margin: 0;
+}
+
+#cover {
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  height: 297mm;
+}
+#cover address {
+  background-color: var(--color-primary);
+  flex: 1 50%;
+  margin: 0 -2cm;
+  padding: 1cm 0;
+  white-space: pre-wrap;
+}
+#cover address:first-of-type {
+  padding-left: 3cm;
+}

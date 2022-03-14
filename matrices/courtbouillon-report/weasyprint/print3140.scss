@@ -1,0 +1,103 @@
+
+/* /project/matrices/courtbouillon-report/30-content-report/3140-typography/print.scss */
+#typography section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1cm 0;
+}
+#typography section h4 {
+    border-top: 1pt solid;
+    flex: 1 25%;
+    margin: 0;
+}
+#typography section h4 + * {
+    flex: 1 75%;
+    margin: 0;
+    padding-left: .5cm;
+}
+#typography section p {
+    text-align: justify;
+}
+#typography section ul {
+    line-height: 2;
+    list-style: none;
+}
+#typography section#small-caps p {
+    font-variant: small-caps;
+}
+#typography section#ligatures dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+#typography section#ligatures dl dt {
+    font-weight: 400;
+    width: 30%;
+}
+#typography section#ligatures dl dd {
+    flex: 1 70%;
+    margin: 0;
+    padding: 0;
+}
+#typography section#ligatures .none {
+    font-variant-ligatures: none;
+}
+#typography section#ligatures .common {
+    font-variant-ligatures: common-ligatures;
+}
+#typography section#ligatures .discretionary {
+    font-variant-ligatures: discretionary-ligatures;
+}
+#typography section#ligatures .contextual {
+    font-variant-ligatures: contextual;
+}
+#typography section#numbers dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+#typography section#numbers dl dt {
+    font-weight: 400;
+    width: 30%;
+}
+#typography section#numbers dl dd {
+    flex: 1 70%;
+    margin: 0;
+    padding: 0;
+}
+#typography section#numbers #fractions {
+    font-variant-numeric: diagonal-fractions;
+}
+#typography section#numbers #ordinals {
+    font-variant-numeric: ordinal;
+}
+#typography section#numbers #slashed {
+    font-variant-numeric: slashed-zero;
+}
+#typography section#numbers #super {
+    font-variant-position: super;
+}
+#typography section#numbers #sub {
+    font-variant-position: sub;
+}
+#typography section#figures dl {
+    columns: 4;
+}
+#typography section#figures dl dt {
+    font-weight: 400;
+}
+#typography section#figures dl dd {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#typography section#figures dl dd ul {
+    padding: 0 1em 0 0;
+}
+#typography section#figures #oldstyle {
+    font-variant-numeric: oldstyle-nums;
+}
+#typography section#figures #tabular {
+    font-variant-numeric: tabular-nums;
+}
+#typography section#figures #old-tabular {
+    font-variant-numeric: oldstyle-nums tabular-nums;
+}

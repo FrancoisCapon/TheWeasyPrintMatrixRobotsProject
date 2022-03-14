@@ -1,0 +1,25 @@
+#contents {
+    page: clean;
+}
+#contents p {
+    font-size: 2em;
+}
+#contents ul {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+}
+#contents li {
+    display: block;
+}
+#contents a {
+    color: inherit;
+    text-decoration: none;
+}
+#contents a::before {
+    content: target-counter(attr(href), h2-counter) ". " target-text(attr(href));
+}
+#contents a::after {
+    content: target-counter(attr(href), page);
+    float: right;
+}

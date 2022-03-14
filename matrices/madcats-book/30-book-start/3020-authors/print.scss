@@ -1,0 +1,30 @@
+#authors {
+    padding-top: 10em;
+    page: clean;
+    text-align: center;
+}
+#authors img {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+#authors p {
+    font-size: 1.3em;
+    margin: 5em 0 1em;
+    text-align: center;
+}
+#authors dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#authors dt {
+    display: block;
+    font-size: 0.8em;
+    line-height: 2rem;
+    width: 100%;
+}
+#authors dd {
+    margin: 0 0.5em;
+    padding: 0;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Builded by the Robots</title>
+    <style>
+        :root {
+            --color-background-body: aliceblue;
+            --color-empty: slategray;
+        }
+        body {
+            font-family: monospace;
+            cursor: default;
+            background-color: var(--color-background-body);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            text-align: center;
+            background-color: antiquewhite;
+            border-collapse: collapse;
+            width: 95%;
+            margin: auto;
+            table-layout: fixed;
+        }
+        table col:first-of-type {
+            width: 5rem;
+        }
+        tr {
+            height: 2.5rem;
+        }
+        td,
+        th {
+            border: 1px solid var(--color-empty);
+            cursor: pointer;
+            padding: 0 0.5rem;
+        }
+        th:empty {
+            background-color: var(--color-background-body);
+            border: none;
+            cursor: default;
+        }
+        td:empty.hover {
+            background-color: lightslategray;
+            border-color: lightslategray;
+            background-color: hsl(210,13%,60%);
+            border-color: hsl(210,13%,60%);
+        }
+        table th.hover {
+            background-color: lightcyan;
+        }
+
+        td {
+            background-color: antiquewhite;
+        }
+        td.hover, table th.hover {
+            background-color: lightcyan;
+        }
+        td:empty {
+            background-color: var(--color-empty);
+            border-color: var(--color-empty);
+            cursor: default;
+        }
+        del {
+            background-color: lightpink;
+        }
+        ins {
+            background-color: lightgreen;
+            text-decoration: none;
+        }
+        ins, del, td span {
+            line-height: 1.5rem;
+            padding: 0.5rem;
+            display: inline-block;
+        }
+        td span {
+            color: silver;
+        }
+        [data-title] {
+            position: relative;
+        }
+        [data-title]:hover:before {
+            content: attr(data-title);
+            position: absolute;
+            left: 0;
+            width: 75%;
+            bottom: 2.5rem;
+            background-color: skyblue;
+            border: solid 1px silver;
+            transition: opacity 0.75s ease-in-out;
+            padding: 0.5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        th,[data-title]:hover:before {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <h1>Matrix Builded by the Robots</h1>
+    <table>
+        <col span="1"/>
+        <!-- TABLE -->
+    </table>
+    <script>
+        function hoveroutcells(kind, id, action) {
+            let cells = document.querySelectorAll('[data-'+ kind +'-id="' + id + '"]');
+            for (i = 0; i < cells.length; i++ ) {
+               if (action == 'add') {
+                   cells[i].classList.add("hover");
+                } else {
+                    cells[i].classList.remove("hover");
+                }
+            }
+        }
+
+        function cellMouseOverOut(event) {
+            //console.log(event.target.tagName)
+            let action;
+            if (event.type == 'mouseover') {
+                action = 'add';
+            } else {
+                action = 'remove'
+            }
+            let rowId;
+            let columnId;
+            if (event.target.tagName != 'TH' && event.target.tagName != 'TD') {
+                rowId = event.target.parentNode.dataset.rowId;
+                columnId = event.target.parentNode.dataset.columnId;
+            } else {
+                rowId = event.target.dataset.rowId;
+                columnId = event.target.dataset.columnId;
+            }
+            hoveroutcells('row', rowId, action)
+            hoveroutcells('column', columnId, action)
+        }
+
+        cells = document.querySelectorAll('th, td, td span, del, ins');
+        for (let i=0; i < cells.length; i++) {
+            cells[i].addEventListener('mouseover', cellMouseOverOut);
+            cells[i].addEventListener('mouseout', cellMouseOverOut);
+        }
+    </script>
+</body>
+</html>
