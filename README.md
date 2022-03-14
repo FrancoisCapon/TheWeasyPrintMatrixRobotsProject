@@ -1,4 +1,4 @@
-# The Weasyprint  :books: Matrix Robots Project :robot:
+# The WeasyPrint :books: Matrix Robots Project :robot:
 
 ### Pourquoi ce projet ?
 
