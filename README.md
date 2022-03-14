@@ -34,7 +34,7 @@ Elle est organisée en lignes et colonnes et chaque cellule peut contenir :
 
 Elle est parcourue dans le sens des lignes puis des colonnes (**héritage**), si plusieurs fichiers `content.hmtl` ou `print.scss` existent sur la même ligne c'est le dernier qui est sélectionné (**réécriture**). Pour les métadonnées `meta.html`, c'est dernier fichier trouvé qui est retenu.
 
-C'est très facile à visualiser grâce au fichier [TODO`matrix.html`](matrices/courtbouillon-report/weasyprint/matrix.html) produit lors de l'impression (au sens génération du PDF).
+C'est très facile à visualiser grâce au fichier <a href="https://htmlpreview.github.io/?https://github.com/FrancoisCapon/TheWeasyPrintMatrixRobotsProject/blob/master/matrices/courtbouillon-report/weasyprint/matrix.html" target="_blank">matrix.html</a> produit lors de l'impression (au sens génération du PDF).
 
 ### Création
 
