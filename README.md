@@ -4,9 +4,9 @@
 
 L'objectif initial était juste de pouvoir générer un fichier PDF à partir d'une documentation MkDocs. J'ai essayé le plugin MkPDFs qui nécessite quelques ajustements pour fonctionner correctement car il n'est pas vraiment maintenu. 
 
-Ces ajustements ont été l'occasion de découvrir Weasyprint et d'appréhender peu à peu tout son potentiel pour la génération de documents à partir d'`HTML` et de `CSS`.
+Ces ajustements ont été l'occasion de découvrir WeasyPrint et d'appréhender peu à peu tout son potentiel pour la génération de documents à partir d'`HTML` et de `CSS`.
 
-Weasyprint prend en entrée un et un seul fichier HTML. L'HTML ne comprenant pas d'instruction d'import (include ou autre), il est nécessaire de produire un fichier monolithique comportant des centaines de lignes pour la génération du PDF d'un document comportant de nombreuses pages.
+WeasyPrint prend en entrée un et un seul fichier HTML. L'HTML ne comprenant pas d'instruction d'import (include ou autre), il est nécessaire de produire un fichier monolithique comportant des centaines de lignes pour la génération du PDF d'un document comportant de nombreuses pages.
 
 D'où l'idée de la création d'un système beaucoup plus modulaire et souple à l'aide d'une **Matrice WeasyPrint** servant à construire un fichier HTML et un fichier CSS servant d'entrée à WeasyPrint.
 
@@ -43,12 +43,12 @@ A partir de la racine d'une matrice, les dossiers et fichiers sont à organisés
 #### colonnes
 C'est le premier niveau de dossier, les noms des dossiers doivent commener par un nombre sur deux chiffres suivi d'un tiret (exemple `05-` ou `75-`), la suite est libre.
 
-Il impératif de respecter l'unicité des numéros de colonnes (deux `10-..` n'est pas possible)
+Il est impératif de respecter l'unicité des numéros de colonnes (deux `10-..` n'est pas possible)
 
 #### cellules
 C'est le second niveau de dossiers, les noms des dossiers doivent commener par un nombre sur quatre chiffres suivi d'un tiret (exemple `0005-` ou `7500-`), la suite est libre.
 
-Il impératif de respecter l'unicité des numéros de lignes au sein d'une même colonne (deux `4040-..` n'est pas possible).
+Il est impératif de respecter l'unicité des numéros de lignes au sein d'une même colonne (deux `4040-..` n'est pas possible).
 
 Il est par contre tout à fait possible d'avoir deux numéros de ligne identiques dans deux colonnes différentes, c'est ce qui permet la **réécriture**.
 
