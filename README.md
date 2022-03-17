@@ -150,6 +150,8 @@ Je n'ai pas essayé, mais le code s'appuie sur la bibliothèque `os.path` et j'u
 Lancement de la construction à partir de la racine du projet
 
 ```
+$ git clone https://github.com/FrancoisCapon/TheWeasyPrintMatrixRobotsProject
+$ cd ./TheWeasyPrintMatrixRobotsProject
 $ docker build -t fcapon/weasyprintmatrixrobots .
 ```
 
