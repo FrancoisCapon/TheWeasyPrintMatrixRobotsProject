@@ -46,7 +46,7 @@ C'est le premier niveau de dossier, les noms des dossiers doivent commener par u
 Il est impératif de respecter l'unicité des numéros de colonnes (deux `10-..` n'est pas possible)
 
 #### cellules
-C'est le second niveau de dossiers, les noms des dossiers doivent commener par un nombre sur quatre chiffres suivi d'un tiret (exemple `0005-` ou `7500-`), la suite est libre.
+C'est le second niveau de dossiers, les noms des dossiers doivent commencer par un nombre sur quatre chiffres suivi d'un tiret (exemple `0005-` ou `7500-`), la suite est libre.
 
 Il est impératif de respecter l'unicité des numéros de lignes au sein d'une même colonne (deux `4040-..` n'est pas possible).
 
