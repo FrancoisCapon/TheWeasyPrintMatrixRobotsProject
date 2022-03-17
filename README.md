@@ -164,18 +164,14 @@ WeasyPrint version 54.2
 root@0b004447b473:/project# sass --version
 1.49.9
 ```
-### Installation du module `weasyprintmatrixrobots`
+### Installation du module `weasyprintmatrixrobots` ("mode développement")
 
 ```
-root@0b004447b473:/project# pip install weasyprintmatrixrobots/
-Processing ./weasyprintmatrixrobots
-Building wheels for collected packages: weasyprintmatrixrobots
-  Building wheel for weasyprintmatrixrobots (setup.py) ... done
-  Created wheel for weasyprintmatrixrobots: filename=weasyprintmatrixrobots-0.5-py3-none-any.whl size=6143 sha256=3311e6d700a7f3896370934a2fbf9ee5521729dddbdab860949d5e1d426dac5f
-  Stored in directory: /tmp/pip-ephem-wheel-cache-98hx740g/wheels/b7/73/cd/7641f7b4eb35d6a0db469ba1ad37808c5650d9e639d66576eb
-Successfully built weasyprintmatrixrobots
+root@0b004447b473:/project# pip install -e weasyprintmatrixrobots/
+Obtaining file:///project/weasyprintmatrixrobots
 Installing collected packages: weasyprintmatrixrobots
-Successfully installed weasyprintmatrixrobots-0.5
+  Running setup.py develop for weasyprintmatrixrobots
+Successfully installed weasyprintmatrixrobots
 root@0b004447b473:/project# pip freeze | grep weasy
 weasyprint==54.2
 weasyprintmatrixrobots @ file:///project/weasyprintmatrixrobots
