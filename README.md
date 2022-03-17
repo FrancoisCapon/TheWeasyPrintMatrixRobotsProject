@@ -115,7 +115,7 @@ L'impression est réalisé par les robots, le robot manager ne "fait rien" mais 
     * le futur fichier `weasyprint.html`
     * la liste des fichiers `printnnnn.scss`
     * par convention les nom des fichiers contenu dans `src='fichier'` ou `url('fichier')` sont considérés comme relatifs, le `preparer` va le transformer en chemin absolu
-        *  la solution est simpliste mais suffisante pour une version de "démarrage" de projet
+        * la solution est simpliste mais suffisante pour une version de "démarrage" de projet
 1. le `writer` écrit dans le dossier `weasyprint` de la matrice les fichiers nécessaires à l'impression :
     * le fichier `weasyprint.html` (nom des fichiers d'origine des parties indiqués en commentaire)
     * les fichiers `print.scss` et `printnnnn.scss`, il les compile en `weasyprint.css` (idem)
@@ -132,7 +132,7 @@ En préfixant son nom par `Z` (par exemple) et elle ne sera pas prise en compte.
 #### Faut-il connaitre SASS ?
 Pas du tout, SASS est un sur-ensemble de CSS donc il est possible de travailler en CSS uniquement.
 
-#### Est-ce que je stocker des fichiers en dehors des cellules ?
+#### Est-ce que je peux stocker des fichiers en dehors des cellules ?
 Tout à fait, dans l'exemple `madcats-book`, les images communes aux chapitres sont stockées dans un dossier spécifique `40-book-chapters/images/` puis référencées de manière relative dans les cellules `<img src='../images/cat-john.png' />`
 
 #### Et l'héritage extra matrice ?
