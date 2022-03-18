@@ -1,0 +1,13 @@
+
+/* /project/matrices/oscp-report/30-content-report/3100-columns/print.scss */
+#columns section {
+    columns: 2;
+    column-gap: 1cm;
+    padding-top: 1cm;
+}
+#columns section p {
+    text-align: justify;
+  }
+#columns section p:first-of-type {
+    font-weight: 700;
+}

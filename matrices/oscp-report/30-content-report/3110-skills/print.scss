@@ -1,0 +1,51 @@
+#skills h3 {
+    background-color: var(--color-primary);
+    margin: 0 -3cm 1cm;
+    padding: 1cm 1cm 1cm 3cm;
+    width: 21cm;
+  }
+  #skills section {
+    padding: .5cm 0;
+  }
+
+  #skills section:before {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-primary);
+    background-size: 50%;
+    content: '';
+    display: inline-block;
+    float: left;
+    height: 2cm;
+    margin-right: .5cm;
+    vertical-align: middle;
+    width: 2cm;
+  }
+  
+#skills-table-content::before {
+    background-image: url('table-content.svg');
+
+  }
+
+  #skills-heading:before {
+    background-image: url('heading.svg');
+  }
+  
+  #skills-multi-columns::before {
+    background-image: url('multi-columns.svg');
+  }
+  
+  #skills-internal-links::before {
+    background-image: url('internal-links.svg');
+  }
+
+  #skills-style::before {
+    background-image: url('style.svg');
+  }
+
+  #skills section h4 {
+    margin: 0;
+  }
+  #skills section p {
+    margin-top: 0;
+  }

@@ -1,0 +1,83 @@
+
+/* /project/matrices/oscp-report/05-template-base/1030-pages/print.scss */
+@page {
+  @top-center {
+    background-color: var(--color-primary);
+    content: '';
+    display: block;
+    height: .05cm;
+    opacity: 1;
+    width: 100%;
+  }
+  @top-left {
+    content: string(heading);
+    font-size: 10pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+  }
+  @bottom-center {
+    background-color: var(--color-primary);
+    content: '';
+    display: block;
+    height: .05cm;
+    opacity: 1;
+    width: 100%;
+  }
+  @bottom-right {
+    background-color: var(--color-primary);
+    color: white;
+    content: counter(page);
+    height: 1cm;
+    text-align: center;
+    width: 1cm;
+  }
+  @bottom-left {
+    content: "Cédric LE ROY";
+    font-size: 9pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+@page :blank{
+    @top-left { background: none; content: none }
+    @top-center { content: none }
+    @top-right { content: none }
+  }
+  
+@page no-chapter{
+    @top-left { background: none; content: none }
+    @top-center { content: none }
+    @top-right { content: none }
+  }
+
+  
+@page chapter {
+    background-color: var(--color-primary);
+    margin: 0;
+    @top-left { content: none }
+    @top-center { content: none }
+    @top-right { content: none }
+  }
+
+  @page contents {
+    @top-left { content: none }
+    @top-center { content: none }
+    @top-right { content: none }
+  }
+
+  @page contents {
+    @bottom-center {
+      height: 0;
+      width: 0;
+    }
+  }
+  
+  @page :blank {
+    @bottom-center {
+      height: 0;
+      width: 0;
+    }
+  }

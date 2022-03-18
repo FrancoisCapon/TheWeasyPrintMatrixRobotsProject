@@ -1,0 +1,31 @@
+
+/* /project/matrices/oscp-report/10-template-report/1100-page--cover/print.scss */
+@page :first {
+    background: url('/project/matrices/oscp-report/10-template-report/1100-page--cover/report-cover.jpg') no-repeat center;
+    background-size: cover;
+    margin: 0;
+}
+
+#cover .e-mail-class{
+  color: white;
+  font-size: 20pt;
+  margin: 8.5cm 0 0 1cm;
+  page: no-chapter;
+  width: 100%;
+}
+
+#cover .osid-class{
+  color: white;
+  font-size: 20pt;
+  margin: 0 0 0 5.5cm;
+  page: no-chapter;
+  width: 100%;
+}
+
+#cover e-mail:first-of-type {
+  padding-left: 3cm;
+}
+
+#cover osid:first-of-type {
+  padding-left: 3cm;
+}
