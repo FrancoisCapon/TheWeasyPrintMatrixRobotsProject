@@ -1,14 +1,6 @@
 #page-last {
     break-before: left;
     page: page-last;
-
-/*     display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: red; */
 }
 
 #page-last div {
@@ -22,13 +14,6 @@
   align-items: center;
   justify-content: center;
 }
-
-// https://www.princexml.com/forum/topic/4063/insert-blank-page-at-the-end-of-pdf
-/* :root::after {
-    content: '';
-    display: block;
-    page-break-before: left
-} */
 
 @page page-last{
     background-color: var(--color-primary);

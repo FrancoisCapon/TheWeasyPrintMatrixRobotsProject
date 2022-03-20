@@ -16,11 +16,8 @@ class Matrix:
         #self.sqlite3_cursor = sqlite3.connect("file::memory:", isolation_level=None).cursor() # autocommit
         self.sqlite3_connection = sqlite3.connect("file::memory:")
         self.sqlite3_cursor = self.sqlite3_connection.cursor()
+        self.sqlite3_cursor.execute("CREATE TABLE cell (id PRIMARY KEY, number_row INTEGER, segment_row TEXT, number_column INTEGER, segment_column TEXT, html INTEGER, scss INTEGER, meta INTEGER)")
         
-        # file for debug
-        #self.sqlite3_cursor = sqlite3.connect("matrix.db", isolation_level=None).cursor() # autocommit
-        #self.sqlite3_cursor.execute("DROP TABLE IF EXISTS cell")
-
     def build_html_page(self):
         self.html_matrix = pkgutil.get_data(__name__, 'template-matrix.html').decode('utf-8')
         self.html_matrix = self.html_matrix.replace('<!-- TABLE -->', self.build_html_table_rows())
@@ -79,11 +76,12 @@ class Matrix:
     def get_cells_winner_files(self, cell_file, which_files ='last_of_each_row'):
         sql_select = f"SELECT * FROM cell WHERE {cell_file[1]} = 1 "
         if which_files == 'last_of_each_row':
-            sql_select += """
+            sql_select += f"""
                 AND id IN 
                 (
                 SELECT number_row + MAX(number_column)/100.0
                 FROM CELL
+                WHERE {cell_file[1]} = 1
                 GROUP BY number_row
                 )
                 ORDER BY id
