@@ -25,7 +25,6 @@ class Retriever(Robot):
         self.matrix.sqlite3_connection.commit()
 
     def retrieve_cells(self):
-        self.matrix.sqlite3_cursor.execute("CREATE TABLE cell (id PRIMARY KEY, number_row INTEGER, segment_row TEXT, number_column INTEGER, segment_column TEXT, html INTEGER, scss INTEGER, meta INTEGER)")
         path_cells = glob.glob(self.matrix.path_root + self.matrix.glob_pattern_columns + self.matrix.glob_pattern_rows )
         for path_cell in path_cells:
             parsed_path_cell = weasyprintmatrixrobots.tools.parse_path_cell(path_cell)
