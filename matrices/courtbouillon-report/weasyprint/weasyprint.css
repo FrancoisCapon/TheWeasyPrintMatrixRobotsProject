@@ -581,17 +581,10 @@ img + figcaption:before {
   font-variant-numeric: oldstyle-nums tabular-nums;
 }
 
-/* /project/matrices/courtbouillon-report/15-template-screen-two-pages/9900-page--last/print.scss */
+/* /project/matrices/courtbouillon-report/21-test-granularity/9900-page--last/print.scss */
 #page-last {
   break-before: left;
   page: page-last;
-  /*     display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background-color: red; */
 }
 
 #page-last div {
@@ -605,35 +598,23 @@ img + figcaption:before {
   align-items: center;
   justify-content: center;
 }
-
-/* :root::after {
-    content: '';
-    display: block;
-    page-break-before: left
-} */
-@page page-last {
-  background-color: var(--color-primary);
-  @top-left {
-    background: none;
-    content: none;
-  }
-  @top-right {
-    content: none;
-  }
-  @top-center {
-    content: none;
-  }
+#page-last div h2 {
+  color: white;
 }
-@page :blank {
-  background-color: whitesmoke;
+
+@page page-last {
+  background-color: darkblue;
   @top-left {
     background: none;
+    content: none;
+  }
+  @top-right {
     content: none;
   }
   @top-center {
     content: none;
   }
-  @top-right {
+  @bottom-center {
     content: none;
   }
 }
@@ -651,4 +632,4 @@ img + figcaption:before {
 /* /project/matrices/courtbouillon-report/30-content-report/3120-offers/print.scss */
 /* /project/matrices/courtbouillon-report/30-content-report/3130-new-chapter/print.scss */
 /* /project/matrices/courtbouillon-report/30-content-report/3140-typography/print.scss */
-/* /project/matrices/courtbouillon-report/15-template-screen-two-pages/9900-page--last/print.scss */
+/* /project/matrices/courtbouillon-report/21-test-granularity/9900-page--last/print.scss */
