@@ -15,4 +15,11 @@ class Printer(Robot):
             handlers=[logging.FileHandler(f'{self.matrix.path_print}weasyprint.log')]
         )
         weasyprint_object = weasyprint.HTML(self.matrix.path_print + 'weasyprint.html')
-        weasyprint_object.write_pdf(self.matrix.path_print + 'weasyprint.pdf', [self.matrix.path_print + 'weasyprint.css'])
+        weasyprint_object.write_pdf(
+            self.matrix.path_print + 'weasyprint.pdf',
+            [self.matrix.path_print + 'weasyprint.css'],
+            # https://doc.courtbouillon.org/weasyprint/latest/api_reference.html#html
+            # HTML presentational hints are not supported by default, but most of them can be supported:
+            # ...various table alignment attributes
+            presentational_hints = True,
+            )
