@@ -31,7 +31,7 @@ class Preparer(Robot):
             self.matrix.scss_main += f'@use "print{number_row}.scss";\n'
 
     def prepare_meta(self):
-        filename, _ = self.matrix.get_cells_winner_files(self.matrix.cells_files[2], 'last_of_matix')[0]
+        filename, _ = self.matrix.get_cells_winner_files(self.matrix.cells_files[2], 'last_of_matrix')[0]
         with open(filename, encoding='utf8') as file:
                 self.matrix.html_meta = file.read()
         file.close()

@@ -86,7 +86,7 @@ class Matrix:
                 )
                 ORDER BY id
             """
-        elif which_files == 'last_of_matix':
+        elif which_files == 'last_of_matrix':
             sql_select += "ORDER BY id DESC LIMIT 1"
         cells = self.sqlite3_cursor.execute(sql_select).fetchall()
         winners = []
