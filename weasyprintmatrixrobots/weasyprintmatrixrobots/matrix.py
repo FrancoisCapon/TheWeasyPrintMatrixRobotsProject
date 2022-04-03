@@ -10,7 +10,10 @@ class Matrix:
         self.glob_pattern_rows = '[0-9][0-9][0-9][0-9]-*' + os.sep
         self.cells_files = [('content.html', 'html'), ('print.scss', 'scss'), ('meta.html', 'meta')]
         self.path_root = os.path.abspath(path_root) + os.sep
-        self.path_print = self.path_root +  'weasyprint' +  os.sep
+        self.path_print = self.path_root +  'print' +  os.sep
+        self.path_print_matrix_out = self.path_print + 'matrix' + os.sep
+        self.path_print_weasyprint_inout = self.path_print + 'weasyprint' + os.sep
+        self.path_print_scss_in = self.path_print + 'scss' + os.sep
 
         # https://docs.python.org/3.4/library/sqlite3.html#connection-objects
         #self.sqlite3_cursor = sqlite3.connect("file::memory:", isolation_level=None).cursor() # autocommit
