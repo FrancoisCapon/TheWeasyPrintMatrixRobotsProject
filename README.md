@@ -127,7 +127,8 @@ L'impression est réalisé par les robots, le robot manager ne "fait rien" mais 
 ## FAQ
 
 #### Comment désactiver une colonne ou une cellule ?
-En préfixant son nom par `Z` (par exemple) et elle ne sera pas prise en compte.
+* En ajoutant `0` à la fin de son numéro, elle ne sera pas prise en compte mais elle restera à "sa place" dans la liste des dossiers
+* En préfixant son nom par `Z` (par exemple), elle ne sera pas prise en compte et elle sera listée à la fin du dossier
 
 #### Faut-il connaitre SASS ?
 Pas du tout, SASS est un sur-ensemble de CSS donc il est possible de travailler en CSS uniquement.
