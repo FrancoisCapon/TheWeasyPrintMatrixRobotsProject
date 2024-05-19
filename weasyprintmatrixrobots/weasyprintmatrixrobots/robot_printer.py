@@ -18,7 +18,7 @@ class Printer(Robot):
         weasyprint_object = weasyprint.HTML(self.matrix.path_print_weasyprint_inout + 'weasyprint.html')
         weasyprint_object.write_pdf(
             self.matrix.path_print + 'print.pdf',
-            [self.matrix.path_print_weasyprint_inout + 'weasyprint.css'],
+            stylesheets=[self.matrix.path_print_weasyprint_inout + 'weasyprint.css'],
             # https://doc.courtbouillon.org/weasyprint/latest/api_reference.html#html
             # HTML presentational hints are not supported by default, but most of them can be supported:
             # ...various table alignment attributes
