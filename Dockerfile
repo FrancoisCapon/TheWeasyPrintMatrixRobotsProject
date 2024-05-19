@@ -9,7 +9,7 @@ RUN apt-get install -yq python3 pango1.0-tools
 
 # https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#debian-11
 RUN apt-get install -yq python3-pip python3-cffi python3-brotli libpango-1.0-0 libpangoft2-1.0-0
-RUN pip install weasyprint==54.2
+RUN pip install weasyprint==62.1
 
 # https://github.com/sass/dart-sass#standalone
 RUN apt-get install wget -yq
